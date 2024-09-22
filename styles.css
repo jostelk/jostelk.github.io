@@ -35,6 +35,66 @@ li {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Breakpoint para pantallas pequeñas (teléfonos móviles) */
+@media (max-width: 480px) {
+  /* Estilos para pantallas pequeñas */
+  .nav {
+    flex-direction: column;
+  }
+  .logo {
+    font-size: 1.5em;
+  }
+  .search-bar {
+    flex-direction: column;
+  }
+  .property-grid {
+    grid-template-columns: 1fr;
+  }
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Breakpoint para pantallas medianas (tabletas) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Estilos para pantallas medianas */
+  .nav {
+    flex-direction: row;
+  }
+  .logo {
+    font-size: 2em;
+  }
+  .search-bar {
+    flex-direction: row;
+  }
+  .property-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .service-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Breakpoint para pantallas grandes (monitores de escritorio) */
+@media (min-width: 769px) {
+  /* Estilos para pantallas grandes */
+  .nav {
+    flex-direction: row;
+  }
+  .logo {
+    font-size: 3em;
+  }
+  .search-bar {
+    flex-direction: row;
+  }
+  .property-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .service-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* Estilos para el header en el archivo index */
 header {
   display: flex;
@@ -141,23 +201,48 @@ header .nav ul li a:hover {
 
 .search-bar {
   display: flex;
-  justify-content: center;
-  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.search-bar input,
-.search-bar select,
-.search-bar button {
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+.search-bar input[type="text"], .search-bar select, .search-bar input[type="number"] {
+  width: 30%;
+  margin: 10px;
 }
 
 .search-bar button {
-  background-color: #F1C40F;
-  color: #2C3E50;
-  cursor: pointer;
+  width: 20%;
+  margin: 10px;
+}
+
+/* Estilos para pantalla mediana */
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column;
+  }
+  .search-bar input[type="text"], .search-bar select, .search-bar input[type="number"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .search-bar button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/* Estilos para pantalla pequeña */
+@media (max-width: 480px) {
+  .search-bar {
+    flex-direction: column;
+  }
+  .search-bar input[type="text"], .search-bar select, .search-bar input[type="number"] {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .search-bar button {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 
 .search-bar button:hover {
