@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>López del Sur - Inmobiliaria</title>
+    <meta name="description" content="Encuentra la propiedad de tus sueños con López del Sur">
+    <meta name="keywords" content="inmobiliaria, propiedades, López del Sur">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
+    <!-- Enlace a Font Awesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <script src="menulink.js"></script>
+    <header role="banner">
+        <nav class="nav" aria-label="Navegación principal">
+            <ul>
+                <li><a href="#home" aria-label="Inicio">Inicio</a></li>
+                <li><a href="#featured-properties" aria-label="Propiedades">Propiedades</a></li>
+                <li><a href="#services" aria-label="Servicios">Servicios</a></li>
+                <li><a href="#contact" aria-label="Contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="López del Sur Logo" aria-hidden="true">
+            <span>López del Sur</span>
+        </div>
+    </header>
+    <main role="main">
+        <section class="hero" id="home" aria-label="Sección de presentación">
+        </section>
+        <section id="search-properties" class="search-properties" aria-label="Buscador de propiedades">
+            <h2>Busca tu Propiedad Ideal</h2>
+            <div class="search-bar">
+                <input type="text" placeholder="Buscar por ubicación o nombre..."
+                    aria-label="Buscar por ubicación o nombre">
+                <select aria-label="Tipo de propiedad">
+                    <option>Tipo de propiedad</option>
+                    <option>Casa</option>
+                    <option>Departamento</option>
+                    <option>Terreno</option>
+                </select>
+                <input type="number" placeholder="Precio mínimo" aria-label="Precio mínimo">
+                <input type="number" placeholder="Precio máximo" aria-label="Precio máximo">
+                <button aria-label="Buscar">Buscar</button>
+            </div>
+        </section>
+        <section id="featured-properties" class="featured-properties" aria-label="Propiedades destacadas">
+            <h2>Propiedades Destacadas</h2>
+            <div class="property-grid">
+                <div class="property-item">
+                    <img src="images/metrodo1.jpg" alt="Apartamento en Cordón" aria-hidden="true">
+                    <div class="property-info">
+                        <h3>Apartamento en Cordón</h3>
+                        <p>$00,000</p>
+                        <a href="property-detail.html" aria-label="Ver detalles de la propiedad">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="images/henkopar1.jpg" alt="Apartamento Moderno" aria-hidden="true">
+                    <div class="property-info">
+                        <h3>Apartamento Moderno</h3>
+                        <p>45,000</p>
+                        <a href="property-detail2.html" aria-label="Ver detalles de la propiedad">Ver detalles</a>
+                    </div>
+                </div>
+                <div class="property-item">
+                    <img src="images/8deoctubre1.jpg" alt="Casa 8 de octubre" aria-hidden="true">
+                    <div class="property-info">
+                        <h3>Casa 8 de octubre</h3>
+                        <p>$33,900</p>
+                        <a href="property-detail.html?id=3" aria-label="Ver detalles de la propiedad">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services" aria-label="Servicios">
+            <h2>Nuestros Servicios</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="service-front">
+                        <i class="fas fa-search"></i>
+                        <h3>Asesoría Inmobiliaria</h3>
+                    </div>
+                    <div class="service-back">
+                        <p>Te ayudamos a encontrar la propiedad ideal.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <i class="fas fa-key"></i>
+                        <h3>Gestión de Compra-Venta</h3>
+                    </div>
+                    <div class="service-back">
+                        <p>Nos encargamos de todo el proceso de compra o venta.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-front">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Asesoría Legal</h3>
+                    </div>
+                    <div class="service-back">
+                        <p>Nuestros expertos te asesoran en todo el proceso legal para tu tranquilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer role="contentinfo">
+        <section id="contact" aria-label="Sección de contacto">
+            <div class="footer-contact">
+                <img src="images/logo.jpeg" alt="Logo López del Sur" aria-hidden="true">
+                <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Dirección: Calle Falsa 123, Montevideo-Uruguay</p>
+                <p><i class="fas fa-phone" aria-hidden="true"></i> Teléfono: +598 96 154 469</p>
+                <p><i class="fas fa-envelope" aria-hidden="true"></i> Email: lopezdelsur.inmob@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://facebook.com/inmobiliaria.lopezdelsur" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/inmobiliaria.lopezdelsur" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
